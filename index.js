@@ -44,5 +44,9 @@ server.post('/signup', handleHomeGetRequest)
 server.get('/',(req,res) => res.send('from signup for get method'))
 
 
-
 server.listen(3000, () => console.log('server is ready'))
+
+//with middlewares, create a function for the middleware
+//add next as a parameter and function()
+//create a server.use route then pass the middleware to the target route
+//same for route specific middleware
